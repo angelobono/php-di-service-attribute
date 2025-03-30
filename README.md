@@ -28,5 +28,5 @@ Then you can use a Container to automatically get an instance of the service:
 $container = new Container();
 Service::setContainer($container);
 $serviceInstance = $container->get(TestService1::class);
-$serviceInstance instanceof TestService === true;
+$serviceInstance instanceof TestService1 === true;
 ```
