@@ -1,0 +1,36 @@
+{
+  "name": "angelobono/php-di-service-attribute",
+  "version": "1.0.0",
+  "description": "A PHP service attribute that automatically configures factories at php-di containers.",
+  "type": "library",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bono\\Service\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bono\\Service\\Test\\": "test/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Angelo Bono",
+      "email": "mail@angelobono.de"
+    }
+  ],
+  "require": {
+    "php-di/php-di": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpstan/phpstan": "^1.0",
+    "squizlabs/php_codesniffer": "^3.0"
+  }
+}
