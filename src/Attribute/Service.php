@@ -6,15 +6,15 @@ namespace Bono\Service\Attribute;
 
 use Attribute;
 use Bono\Service\Builder\ReflectionBasedFactoryBuilder;
-use DI\Container;
+use Psr\Container\ContainerInterface;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 class Service
 {
     /**
-     * @var Container $container
+     * @var ContainerInterface $container
      */
-    private static Container $container;
+    private static ContainerInterface $container;
 
     /**
      * @var ReflectionBasedFactoryBuilder $reflection
@@ -34,18 +34,18 @@ class Service
     }
 
     /**
-     * @param Container $container
+     * @param ContainerInterface $container
      * @return void
      */
-    public static function setContainer(Container $container): void
+    public static function setContainer(ContainerInterface $container): void
     {
         self::$container = $container;
     }
 
     /**
-     * @return Container
+     * @return ContainerInterface
      */
-    public static function getContainer(): Container
+    public static function getContainer(): ContainerInterface
     {
         if (!isset(self::$container)) {
             throw new \RuntimeException(
