@@ -3,6 +3,7 @@
 namespace Bono\Service\Test\Attribute;
 
 use Bono\Service\Attribute\Service;
+use Bono\Service\Test\Service\TestService;
 use DI\Container;
 use DI\DependencyException;
 use DI\NotFoundException;

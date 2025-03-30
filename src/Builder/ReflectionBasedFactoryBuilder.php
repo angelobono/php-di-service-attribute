@@ -2,20 +2,20 @@
 
 namespace Bono\Service\Builder;
 
-use DI\Container;
+use Psr\Container\ContainerInterface;
 use ReflectionClass;
 
 class ReflectionBasedFactoryBuilder
 {
     /**
-     * @var Container
+     * @var ContainerInterface
      */
-    private Container $container;
+    private ContainerInterface $container;
 
     /**
-     * @param Container $container
+     * @param ContainerInterface $container
      */
-    public function __construct(Container $container)
+    public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
     }

@@ -1,4 +1,4 @@
-# A PHP service attribute that automatically configures factories for PHP-DI
+# A PHP service attribute that automatically configures factories in a DI container
 
 The factories based on constructor reflection, so everything will be processed
 at compile time only.

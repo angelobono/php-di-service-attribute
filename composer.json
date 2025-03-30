@@ -1,7 +1,7 @@
 {
   "name": "angelobono/php-di-service-attribute",
   "version": "1.0.0",
-  "description": "A PHP service attribute that automatically configures factories at php-di containers.",
+  "description": "A PHP service attribute that automatically configures factories for (psr) di containers.",
   "type": "library",
   "minimum-stability": "stable",
   "prefer-stable": true,
@@ -26,11 +26,12 @@
     }
   ],
   "require": {
-    "php-di/php-di": "^7.0"
+    "psr/container": "^2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5",
     "phpstan/phpstan": "^1.0",
+    "php-di/php-di": "^7.0",
     "squizlabs/php_codesniffer": "^3.0"
   }
 }
