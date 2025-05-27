@@ -3,6 +3,12 @@
 The factories based on constructor reflection, so everything will be processed
 at compile time only.
 
+## Install
+
+```bash
+composer require angelobono/php-di-service-attribute
+```
+
 ## Usage
 
 If you have a class you can add the `#[Service]` attribute to it:
