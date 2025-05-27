@@ -1,6 +1,6 @@
 {
   "name": "angelobono/php-di-service-attribute",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A PHP service attribute that automatically configures factories for (psr) di containers.",
   "type": "library",
   "license": "MIT",
